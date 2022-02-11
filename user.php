@@ -1,3 +1,12 @@
+<?php
+
+session_start();
+if (empty($_SESSION['nik'])) {
+  echo '<script>alert("Anda harus login terlebih dahulu !"); window.location.assign("index.php")</script>';
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -19,6 +28,9 @@
 
   <!-- Custom styles for this template-->
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this page -->
+  <link href="vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 
 </head>
 
@@ -122,7 +134,7 @@
               }
             } else {
               echo "Selamat datang di aplikasi peduli diri, dimana aplikasi ini digunakan untuk mencatat riwayat perjalanan";
-              echo "<br>Anda login sebagai : ";
+              echo "<br>Anda login sebagai : " . $_SESSION['nama_lengkap'] . " - dengan NIK : " . $_SESSION['nik'];
             }
 
             ?>
@@ -177,13 +189,22 @@
 
   <!-- Bootstrap core JavaScript-->
   <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js">
+  </script>
 
   <!-- Core plugin JavaScript-->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
   <!-- Custom scripts for all pages-->
   <script src="js/sb-admin-2.min.js"></script>
+
+  <!-- Page level plugins -->
+  <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+  <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
+
+  <!-- Page level custom scripts -->
+  <script src="js/demo/datatables-demo.js"></script>
+
 
 </body>
 

@@ -1,0 +1,3 @@
+NIK|NAMA LENGKAP
+123|dodi
+321|udin

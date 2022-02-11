@@ -41,7 +41,7 @@
                     <h1 class="h4 text-gray-900 mb-2 text-capitalize">Selamat datang di aplikasi Peduli diri</h1>
                     <p>Silahkan masukan NIK dan Nama Lengkap anda</p>
                   </div>
-                  <form class="user">
+                  <form class="user" method="post" action="proses_login.php">
                     <div class="form-group">
                       <input type="text" name="nik" required class="form-control form-control-user"
                         id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Masukan NIK anda...">
