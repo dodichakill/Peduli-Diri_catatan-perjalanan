@@ -6,6 +6,11 @@
       </span>
       <span class="text">kembali</span>
     </a>
+    <h4 class="d-inline ml-3">Tulis Catatan Perjalananmu
+      <?php 
+        echo $_SESSION['nama_lengkap'];
+      ?>
+    </h4>
   </div>
   <div class="card-body">
     <form action="simpan_catatan.php" method="post">

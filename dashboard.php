@@ -44,8 +44,8 @@ if (empty($_SESSION['nik'])) {
 
       <!-- Sidebar - Brand -->
       <a class="sidebar-brand d-flex align-items-center justify-content-center" href="dashboard.php">
-        <div class="sidebar-brand-icon rotate-n-15">
-          <i class="fas fa-book"></i>
+        <div class="sidebar-brand-icon">
+          <i class="fas fa-laptop-house"></i>
         </div>
         <div class="sidebar-brand-text mx-3">Peduli Diri</div>
       </a>
@@ -71,7 +71,7 @@ if (empty($_SESSION['nik'])) {
       <!-- Nav Item - Charts -->
       <li class="nav-item">
         <a class="nav-link" href="?url=tulis_catatan">
-          <i class="fas fa-fw fa-clone"></i>
+          <i class="fas fa-fw fa-pen-square"></i>
           <span>Tulis Catatan Perjalanan</span></a>
       </li>
 
