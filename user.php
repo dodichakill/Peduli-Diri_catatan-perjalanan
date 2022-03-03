@@ -72,14 +72,14 @@ if (empty($_SESSION['nik'])) {
       <li class="nav-item">
         <a class="nav-link" href="?url=tulis_catatan">
           <i class="fas fa-fw fa-clone"></i>
-          <span>Tulis Catatan / Perjalanan</span></a>
+          <span>Tulis Catatan Perjalanan</span></a>
       </li>
 
       <!-- Nav Item - Tables -->
       <li class="nav-item">
         <a class="nav-link" href="?url=catatan_perjalanan">
           <i class="fas fa-fw fa-book"></i>
-          <span>Catatan Perjalanan</span></a>
+          <span>Lihat Riwayat Perjalanan</span></a>
       </li>
 
       <!-- Nav Item - Tables -->

@@ -12,7 +12,7 @@ foreach ($data as $value) {
   }
 }
 
-if ($cek) { // jika nik sudah terdaftar 
+if (@$cek) { // jika nik sudah terdaftar 
   echo "<script>alert('Maaf NIK yang anda gunakan sudah terdaftar'); window.location.assign('register.php')</script> ";
 } else { // jika nik tidak ditemukan
   // buat format penyimpanan ke config.txt
