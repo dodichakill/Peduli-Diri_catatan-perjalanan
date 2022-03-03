@@ -27,18 +27,23 @@
   <div class="container">
 
     <!-- Outer Row -->
-    <div class="row justify-content-center">
+    <div class="row d-flex justify-content-center align-items-center">
 
-      <div class="col-xl-6 col-lg-12 col-md-9">
-
+      <div class="col-xl-12 col-lg-12 col-md-11">
         <div class="card o-hidden border-0 shadow-lg my-5">
+          <div class="bg-white p-5 rounded border-bottom text-center">
+            <h1 class="h2 text-capitalize text-primary">Selamat datang di aplikasi Peduli diri</h1>
+            <p>Silahkan Login Terlebih Dahulu Sebelum Melanjutkan Ke Halaman Utama</p>
+          </div>
+
           <div class="card-body p-0">
-            <!-- Nested Row within Card Body -->
             <div class="row">
-              <div class="col-lg-12">
+              <div class="col-lg-6 d-flex justify-content-center align-items-center border-bottom">
+                <img src="img/undraw_posting_photo.svg" alt="ilustration" class="img-fluid p-5 border-right">
+              </div>
+              <div class="col-lg-6">
                 <div class="p-5">
-                  <div class="text-center">
-                    <h1 class="h4 text-gray-900 mb-2 text-capitalize">Selamat datang di aplikasi Peduli diri</h1>
+                  <div class="">
                     <p>Silahkan masukan NIK dan Nama Lengkap anda</p>
                   </div>
                   <form class="user" method="post" action="proses_login.php">
@@ -50,7 +55,16 @@
                       <input type="text" name="nama_lengkap" class="form-control form-control-user"
                         id="exampleInputPassword" placeholder="Masukan Nama lengkap anda...">
                     </div>
-                    <button type="submit" class="btn btn-primary btn-user btn-block">
+                    <span class="mr-3">Sebagai : </span>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="type" id="user" value="user" checked>
+                      <label class="form-check-label" for="user">User</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="type" id="admin" value="admin">
+                      <label class="form-check-label" for="admin">Admin</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-user btn-block mt-3">
                       <i class="fa fa-spinner"></i> Login
                     </button>
                     <hr>

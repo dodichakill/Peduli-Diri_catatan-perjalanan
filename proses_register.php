@@ -2,6 +2,7 @@
 
 $nik            = $_POST['nik'];
 $nama_lengkap   = $_POST['nama_lengkap'];
+$type           = 'user';
 
 // cek apakah nik sudah terdaftar
 $data = file('config.txt', FILE_IGNORE_NEW_LINES);
@@ -16,7 +17,7 @@ if (@$cek) { // jika nik sudah terdaftar
   echo "<script>alert('Maaf NIK yang anda gunakan sudah terdaftar'); window.location.assign('register.php')</script> ";
 } else { // jika nik tidak ditemukan
   // buat format penyimpanan ke config.txt
-  $format = "\n$nik|$nama_lengkap";
+  $format = "\n$nik|$nama_lengkap|$type";
 
   // buka file config.txt 
   $file = fopen('config.txt', 'a');

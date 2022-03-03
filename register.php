@@ -40,7 +40,7 @@
               <div class="col-lg-12">
                 <div class="p-5">
                   <div class="text-center">
-                    <h1 class="h4 text-gray-900 mb-2 text-capitalize">Selamat datang di aplikasi Peduli diri</h1>
+                    <h1 class="h4 text-gray-900 mb-2 text-capitalize">Registrasi Akun Peduli Diri</h1>
                     <p>Silahkan masukan NIK dan Nama Lengkap anda</p>
                   </div>
                   <form class="user" action="proses_register.php" method="post">
