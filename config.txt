@@ -1,3 +1,4 @@
-NIK|NAMA LENGKAP
-123|dodi
-321|udin
+NIK|NAMA LENGKAP|TYPE|GENDER
+000|dodi|admin|laki-laki
+321|udin|user|laki-laki
+123|fatimah|user|perempuan

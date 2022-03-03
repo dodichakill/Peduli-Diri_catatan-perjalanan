@@ -121,11 +121,11 @@ if (empty($_SESSION['nik'])) {
             if (!empty($_GET['url'])) {
               switch ($_GET['url']) {
                 case 'tulis_catatan';
-                  include 'tulis_catatan.php';
+                  include 'segment/tulis_catatan.php';
                   break;
 
                 case 'catatan_perjalanan';
-                  include 'catatan_perjalanan.php';
+                  include 'segment/catatan_perjalanan.php';
                   break;
 
                 default:
@@ -133,8 +133,7 @@ if (empty($_SESSION['nik'])) {
                   break;
               }
             } else {
-              echo "Selamat datang di aplikasi peduli diri, dimana aplikasi ini digunakan untuk mencatat riwayat perjalanan";
-              echo "<br>Anda login sebagai : " . $_SESSION['nama_lengkap'] . " - dengan NIK : " . $_SESSION['nik'];
+              include 'segment/info.php';
             }
 
             ?>

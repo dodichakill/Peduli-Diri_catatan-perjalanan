@@ -55,15 +55,17 @@
                       <input type="text" name="nama_lengkap" class="form-control form-control-user"
                         id="exampleInputPassword" placeholder="Masukan Nama lengkap anda...">
                     </div>
-                    <span class="mr-3">Sebagai : </span>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="type" id="user" value="user" checked>
-                      <label class="form-check-label" for="user">User</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                      <input class="form-check-input" type="radio" name="type" id="admin" value="admin">
-                      <label class="form-check-label" for="admin">Admin</label>
-                    </div>
+                    <section>
+                      <span class="mr-3">Sebagai : </span>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="type" id="user" value="user" checked>
+                        <label class="form-check-label" for="user">User</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="type" id="admin" value="admin">
+                        <label class="form-check-label" for="admin">Admin</label>
+                      </div>
+                    </section>
                     <button type="submit" class="btn btn-primary btn-user btn-block mt-3">
                       <i class="fa fa-spinner"></i> Login
                     </button>

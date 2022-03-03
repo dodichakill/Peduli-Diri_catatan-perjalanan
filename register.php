@@ -52,7 +52,18 @@
                       <input type="text" name="nama_lengkap" class="form-control form-control-user"
                         placeholder="Masukan Nama lengkap anda...">
                     </div>
-                    <button type="submit" class="btn btn-primary btn-user btn-block">
+                    <section>
+                      <span class="mr-3">Jenis Kelamin : </span>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="laki-laki" value="laki-laki" checked>
+                        <label class="form-check-label" for="laki-laki">laki-laki</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="perempuan" value="perempuan">
+                        <label class="form-check-label" for="perempuan">perempuan</label>
+                      </div>
+                    </section>
+                    <button type="submit" class="btn btn-primary btn-user btn-block mt-3">
                       <i class="fa fa-spinner"></i> Register
                     </button>
                     <hr>
